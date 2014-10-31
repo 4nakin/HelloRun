@@ -1,0 +1,208 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Flat-It Type Foundry
+ * License URL: http://www.fontspring.com/fflicense/flat-it
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'StereoGothic500Regular';
+    src: url('sgr500-webfont.eot');
+    src: url('sgr500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sgr500-webfont.woff') format('woff'),
+         url('sgr500-webfont.ttf') format('truetype'),
+         url('sgr500-webfont.svg#StereoGothic500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #C4C4C4;
+	cursor: default;
+}
+
+/* Img */
+
+#loader, #webgl {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+}
+
+#webgl {
+	display: none;
+}
+
+/* GUI */
+
+.gui {
+	font-family: 'StereoGothic500Regular';
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.gui a {
+	text-decoration: none;
+}
+
+.gui a:hover {
+	color: #ff1561;
+	text-decoration: none;
+}
+
+.gui_white, .gui_white a {
+	color: white;
+}
+
+.gui_black, .gui_black a {
+	color: black;
+}
+
+.gui_black_hover a:hover {
+	color: black;
+}
+
+/* Responsive */
+
+.gui_desktop, .gui_tablet, .gui_phone {
+	display: none;
+}
+
+/* Desktop */
+/*@media screen and (min-width: 1026px) {*/
+@media screen and (min-device-width: 1026px) {
+
+	#loader {
+		margin-top: -134px;
+		margin-left: -128px;
+		width: 256px;
+		height: 164px;
+	}
+
+	#webgl {
+		margin-top: -144px;
+		margin-left: -128px;
+		width: 256px;
+		height: 120px;
+	}
+
+	.gui_body {
+		font-size: 14px;
+	}
+
+	.gui_title {
+		font-size: 42px;
+	}
+
+	.gui_desktop {
+		display: block;
+	}
+}
+
+/* Tablet */
+/*@media screen and (min-width: 570px) and (max-width: 1025px) {*/
+@media screen and (min-device-width: 570px) and (max-device-width: 1025px) {
+
+	#loader {
+		margin-top: -134px;
+		margin-left: -128px;
+		width: 256px;
+		height: 164px;
+	}
+
+	#webgl {
+		margin-top: -144px;
+		margin-left: -128px;
+		width: 256px;
+		height: 120px;
+	}
+
+	.gui_body {
+		font-size: 12px;
+	}
+
+	.gui_title {
+		font-size: 36px;
+	}
+
+	.gui_tablet {
+		display: block;
+	}
+}
+
+/* Phone */
+/*@media screen and (max-width: 569px) {*/
+@media screen and (max-device-width: 569px) {
+
+	#loader {
+		margin-top: -67px;
+		margin-left: -64px;
+		width: 128px;
+		height: 82px;
+	}
+
+	#webgl {
+		margin-top: -72px;
+		margin-left: -64px;
+		width: 128px;
+		height: 60px;
+	}
+
+	.gui_body {
+		font-size: 10px;
+	}
+
+	.gui_title {
+		font-size: 30px;
+	}
+
+	.gui_phone {
+		display: block;
+	}
+}
+
+/* Upscale */
+
+.upscale {
+	/* Anchor to the upper left */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* Scale from the corner */
+	-webkit-transform-origin: 0 0 0;
+	-moz-transform-origin: 0 0 0;
+	-ms-transform-origin: 0 0 0;
+	-o-transform-origin: 0 0 0;
+	transform-origin: 0 0 0;
+}
+
